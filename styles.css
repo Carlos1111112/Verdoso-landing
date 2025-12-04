@@ -438,7 +438,7 @@ em {
     background: var(--gray-200);
 }
 
-/* Hero Visual - Animated Hydroponic System */
+/* Hero Visual - YouTube Video */
 .hero-visual {
     display: flex;
     justify-content: center;
@@ -451,154 +451,36 @@ em {
     to { opacity: 1; }
 }
 
-.hydro-animation {
+.video-container {
     position: relative;
-    width: 400px;
-    height: 500px;
-}
-
-.water-tank {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 120px;
-    background: linear-gradient(180deg, rgba(94, 234, 212, 0.3) 0%, rgba(20, 184, 166, 0.5) 100%);
-    border: 3px solid var(--teal-500);
-    border-radius: 10px;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 25px 60px -15px rgba(34, 197, 94, 0.3), 
+                0 10px 30px -10px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--green-200);
+    background: var(--green-900);
 }
 
-.water {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80%;
-    background: linear-gradient(180deg, rgba(94, 234, 212, 0.6) 0%, rgba(13, 148, 136, 0.8) 100%);
-    animation: wave 3s ease-in-out infinite;
-}
-
-@keyframes wave {
-    0%, 100% { height: 78%; }
-    50% { height: 82%; }
-}
-
-.water .bubble {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 50%;
-    animation: bubble 4s ease-in-out infinite;
-}
-
-.water .bubble:nth-child(1) { left: 20%; animation-delay: 0s; }
-.water .bubble:nth-child(2) { left: 50%; animation-delay: 1s; }
-.water .bubble:nth-child(3) { left: 80%; animation-delay: 2s; }
-
-@keyframes bubble {
-    0% { bottom: 10%; opacity: 0; transform: scale(0.5); }
-    50% { opacity: 1; transform: scale(1); }
-    100% { bottom: 90%; opacity: 0; transform: scale(0.3); }
-}
-
-.plant-container {
-    position: absolute;
-    bottom: 130px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.roots {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 80px;
-    background: linear-gradient(180deg, var(--green-700) 0%, var(--green-400) 100%);
-}
-
-.roots::before,
-.roots::after {
+.video-container::before {
     content: '';
     position: absolute;
-    top: 20px;
-    width: 3px;
-    height: 40px;
-    background: var(--green-400);
+    inset: -3px;
+    background: linear-gradient(135deg, var(--green-400), var(--emerald-500), var(--teal-400));
+    border-radius: 22px;
+    z-index: -1;
+    opacity: 0.5;
 }
 
-.roots::before {
-    left: -15px;
-    transform: rotate(-30deg);
-}
-
-.roots::after {
-    right: -15px;
-    transform: rotate(30deg);
-}
-
-.stem {
+.video-container iframe {
     position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px;
-    height: 200px;
-    background: linear-gradient(180deg, var(--green-500) 0%, var(--green-700) 100%);
-    border-radius: 4px;
-}
-
-.leaves-visual {
-    position: absolute;
-    bottom: 250px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.leaf-visual {
-    position: absolute;
-    background: var(--green-500);
-    border-radius: 50% 0;
-    animation: leafGrow 3s ease-in-out infinite;
-}
-
-.leaf-v1 {
-    width: 80px;
-    height: 50px;
-    top: -20px;
-    left: -70px;
-    transform: rotate(-30deg);
-    background: linear-gradient(135deg, var(--green-400) 0%, var(--green-600) 100%);
-    animation-delay: 0s;
-}
-
-.leaf-v2 {
-    width: 90px;
-    height: 55px;
-    top: -40px;
-    right: -80px;
-    transform: rotate(30deg) scaleX(-1);
-    background: linear-gradient(135deg, var(--green-500) 0%, var(--green-700) 100%);
-    animation-delay: 0.5s;
-}
-
-.leaf-v3 {
-    width: 70px;
-    height: 45px;
-    top: -70px;
-    left: -30px;
-    transform: rotate(-10deg);
-    background: linear-gradient(135deg, var(--emerald-400) 0%, var(--green-500) 100%);
-    animation-delay: 1s;
-}
-
-@keyframes leafGrow {
-    0%, 100% { transform: scale(1) rotate(-30deg); }
-    50% { transform: scale(1.05) rotate(-28deg); }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
 }
 
 /* ==========================================
@@ -1400,6 +1282,7 @@ em {
         grid-template-columns: 1fr;
         text-align: center;
         padding: 8rem 2rem 4rem;
+        gap: 3rem;
     }
     
     .hero-content {
@@ -1416,7 +1299,13 @@ em {
     }
     
     .hero-visual {
-        display: none;
+        display: flex;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .video-container {
+        max-width: 100%;
     }
     
     .mission-grid {
