@@ -22,12 +22,23 @@
                 <span>Verdoso</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#science">Science</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="#mission" data-i18n="nav.mission">Mission</a></li>
+                <li><a href="#science" data-i18n="nav.science">Science</a></li>
+                <li><a href="#team" data-i18n="nav.team">Team</a></li>
                 <li><a href="#diamond">Diamond Challenge</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
+                <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">
+                    <span class="lang-flag">🇺🇸</span>
+                    <span class="lang-code">EN</span>
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <span class="lang-flag">🇪🇸</span>
+                    <span class="lang-code">ES</span>
+                </button>
+            </div>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -52,40 +63,40 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="badge-dot"></span>
-                Hydroponic Innovation from Peru
+                <span data-i18n="hero.badge">Hydroponic Innovation from Peru</span>
             </div>
             <h1 class="hero-title">
-                <span class="title-line">Growing the</span>
-                <span class="title-line highlight">Future</span>
-                <span class="title-line">Without Soil</span>
+                <span class="title-line" data-i18n="hero.title1">Growing the</span>
+                <span class="title-line highlight" data-i18n="hero.title2">Future</span>
+                <span class="title-line" data-i18n="hero.title3">Without Soil</span>
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" data-i18n="hero.description">
                 Revolutionizing agriculture through accessible, cost-efficient hydroponic systems. 
                 Breaking barriers, educating communities, and cultivating sustainable solutions for Peru and beyond.
             </p>
             <div class="hero-actions">
                 <a href="#science" class="btn btn-primary">
-                    Discover How
+                    <span data-i18n="hero.cta1">Discover How</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
-                <a href="#contact" class="btn btn-secondary">Join the Movement</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">Join the Movement</a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number">90%</span>
-                    <span class="stat-label">Less Water Usage</span>
+                    <span class="stat-label" data-i18n="hero.stat1">Less Water Usage</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
                     <span class="stat-number">3x</span>
-                    <span class="stat-label">Faster Growth</span>
+                    <span class="stat-label" data-i18n="hero.stat2">Faster Growth</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
                     <span class="stat-number">∞</span>
-                    <span class="stat-label">Possibilities</span>
+                    <span class="stat-label" data-i18n="hero.stat3">Possibilities</span>
                 </div>
             </div>
         </div>
@@ -106,8 +117,8 @@
     <section id="mission" class="mission-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-tag">Our Purpose</span>
-                <h2 class="section-title">Cultivating Change, <br><em>One Drop at a Time</em></h2>
+                <span class="section-tag" data-i18n="mission.tag">Our Purpose</span>
+                <h2 class="section-title"><span data-i18n="mission.title1">Cultivating Change,</span> <br><em data-i18n="mission.title2">One Drop at a Time</em></h2>
             </div>
             <div class="mission-grid">
                 <div class="mission-card mission-main">
@@ -118,23 +129,23 @@
                             <path d="M24 16V32M18 24H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3>Our Mission</h3>
-                    <p>To democratize hydroponic agriculture across Peru by developing cost-efficient systems that break down economic barriers, while educating communities on sustainable farming practices that can transform our food future.</p>
+                    <h3 data-i18n="mission.mainTitle">Our Mission</h3>
+                    <p data-i18n="mission.mainDesc">To democratize hydroponic agriculture across Peru by developing cost-efficient systems that break down economic barriers, while educating communities on sustainable farming practices that can transform our food future.</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-number">01</div>
-                    <h4>Education First</h4>
-                    <p>Promoting hydroponic knowledge in schools and communities throughout Peru, making agricultural innovation accessible to everyone.</p>
+                    <h4 data-i18n="mission.card1Title">Education First</h4>
+                    <p data-i18n="mission.card1Desc">Promoting hydroponic knowledge in schools and communities throughout Peru, making agricultural innovation accessible to everyone.</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-number">02</div>
-                    <h4>Breaking Barriers</h4>
-                    <p>Developing affordable hydroponic models that eliminate cost barriers preventing farmers from adopting sustainable practices.</p>
+                    <h4 data-i18n="mission.card2Title">Breaking Barriers</h4>
+                    <p data-i18n="mission.card2Desc">Developing affordable hydroponic models that eliminate cost barriers preventing farmers from adopting sustainable practices.</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-number">03</div>
-                    <h4>Solving Global Issues</h4>
-                    <p>Demonstrating how hydroponics addresses water scarcity, food security, and land use challenges facing our world today.</p>
+                    <h4 data-i18n="mission.card3Title">Solving Global Issues</h4>
+                    <p data-i18n="mission.card3Desc">Demonstrating how hydroponics addresses water scarcity, food security, and land use challenges facing our world today.</p>
                 </div>
             </div>
         </div>
@@ -144,9 +155,9 @@
     <section id="science" class="science-section">
         <div class="section-container">
             <div class="section-header center">
-                <span class="section-tag">The Science</span>
-                <h2 class="section-title">How Hydroponics <em>Works</em></h2>
-                <p class="section-subtitle">A soil-free revolution in agriculture, powered by water, nutrients, and innovation</p>
+                <span class="section-tag" data-i18n="science.tag">The Science</span>
+                <h2 class="section-title"><span data-i18n="science.title1">How Hydroponics</span> <em data-i18n="science.title2">Works</em></h2>
+                <p class="section-subtitle" data-i18n="science.subtitle">A soil-free revolution in agriculture, powered by water, nutrients, and innovation</p>
             </div>
             
             <div class="hydro-diagram">
@@ -209,9 +220,9 @@
                         <text x="150" y="395" text-anchor="middle" fill="#065f46" font-size="12" font-weight="bold">N-P-K</text>
                         
                         <!-- Labels -->
-                        <text x="150" y="490" text-anchor="middle" fill="#065f46" font-size="14" font-weight="600">Nutrient Reservoir</text>
-                        <text x="300" y="460" text-anchor="middle" fill="#065f46" font-size="12" font-weight="500">Water Pump</text>
-                        <text x="575" y="270" text-anchor="middle" fill="#065f46" font-size="14" font-weight="600">Growing Channel (NFT)</text>
+                        <text x="150" y="490" text-anchor="middle" fill="#065f46" font-size="14" font-weight="600" data-i18n-svg="diagram.reservoir">Nutrient Reservoir</text>
+                        <text x="300" y="460" text-anchor="middle" fill="#065f46" font-size="12" font-weight="500" data-i18n-svg="diagram.pump">Water Pump</text>
+                        <text x="575" y="270" text-anchor="middle" fill="#065f46" font-size="14" font-weight="600" data-i18n-svg="diagram.channel">Growing Channel (NFT)</text>
                         
                         <!-- Gradients -->
                         <defs>
@@ -231,8 +242,8 @@
                             <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
                         </svg>
                     </div>
-                    <h4>Nutrient Film Technique</h4>
-                    <p>A thin film of nutrient-rich water continuously flows over plant roots, providing constant access to essential minerals while maximizing oxygen exposure.</p>
+                    <h4 data-i18n="science.card1Title">Nutrient Film Technique</h4>
+                    <p data-i18n="science.card1Desc">A thin film of nutrient-rich water continuously flows over plant roots, providing constant access to essential minerals while maximizing oxygen exposure.</p>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">
@@ -241,8 +252,8 @@
                             <path d="M12 6v6l4 2"/>
                         </svg>
                     </div>
-                    <h4>Accelerated Growth</h4>
-                    <p>Plants grow up to 3x faster due to direct nutrient access. Roots don't need to search for food, allowing energy to focus on vegetative growth.</p>
+                    <h4 data-i18n="science.card2Title">Accelerated Growth</h4>
+                    <p data-i18n="science.card2Desc">Plants grow up to 3x faster due to direct nutrient access. Roots don't need to search for food, allowing energy to focus on vegetative growth.</p>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">
@@ -251,8 +262,8 @@
                             <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                         </svg>
                     </div>
-                    <h4>Water Conservation</h4>
-                    <p>Recirculating systems use up to 90% less water than traditional farming. Every drop is reused, making it ideal for water-scarce regions.</p>
+                    <h4 data-i18n="science.card3Title">Water Conservation</h4>
+                    <p data-i18n="science.card3Desc">Recirculating systems use up to 90% less water than traditional farming. Every drop is reused, making it ideal for water-scarce regions.</p>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">
@@ -260,8 +271,8 @@
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                         </svg>
                     </div>
-                    <h4>Pesticide-Free</h4>
-                    <p>Controlled environments eliminate most pests and diseases, reducing or eliminating the need for harmful chemical pesticides.</p>
+                    <h4 data-i18n="science.card4Title">Pesticide-Free</h4>
+                    <p data-i18n="science.card4Desc">Controlled environments eliminate most pests and diseases, reducing or eliminating the need for harmful chemical pesticides.</p>
                 </div>
             </div>
         </div>
@@ -271,8 +282,8 @@
     <section id="team" class="team-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-tag">The Visionaries</span>
-                <h2 class="section-title">Meet Our <em>Team</em></h2>
+                <span class="section-tag" data-i18n="team.tag">The Visionaries</span>
+                <h2 class="section-title"><span data-i18n="team.title1">Meet Our</span> <em data-i18n="team.title2">Team</em></h2>
             </div>
             
             <div class="team-grid">
@@ -282,12 +293,12 @@
                         <div class="image-placeholder">
                             <span>CR</span>
                         </div>
-                        <div class="member-badge">Co-Founder</div>
+                        <div class="member-badge" data-i18n="team.cofounder">Co-Founder</div>
                     </div>
                     <div class="member-info">
                         <h3>Carlos Rojas</h3>
-                        <span class="member-role">Initiative Leader</span>
-                        <p>Passionate about sustainable agriculture and innovative solutions to Peru's food security challenges.</p>
+                        <span class="member-role" data-i18n="team.leaderRole">Initiative Leader</span>
+                        <p data-i18n="team.carlosDesc">Passionate about sustainable agriculture and innovative solutions to Peru's food security challenges.</p>
                         <div class="member-social">
                             <a href="#" aria-label="LinkedIn" class="social-link">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -305,12 +316,12 @@
                         <div class="image-placeholder">
                             <span>GA</span>
                         </div>
-                        <div class="member-badge">Co-Founder</div>
+                        <div class="member-badge" data-i18n="team.cofounder">Co-Founder</div>
                     </div>
                     <div class="member-info">
                         <h3>Gabriel Arosemena</h3>
-                        <span class="member-role">Initiative Leader</span>
-                        <p>Dedicated to making hydroponic technology accessible and affordable for farmers across Peru.</p>
+                        <span class="member-role" data-i18n="team.leaderRole">Initiative Leader</span>
+                        <p data-i18n="team.gabrielDesc">Dedicated to making hydroponic technology accessible and affordable for farmers across Peru.</p>
                         <div class="member-social">
                             <a href="#" aria-label="LinkedIn" class="social-link">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -326,7 +337,7 @@
                     <div class="card-glow mentor-glow"></div>
                     <div class="mentor-crown">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5z"/></svg>
-                        <span>Mentor</span>
+                        <span data-i18n="team.mentor">Mentor</span>
                     </div>
                     <div class="member-image">
                         <div class="image-placeholder mentor-img">
@@ -335,12 +346,12 @@
                     </div>
                     <div class="member-info">
                         <h3>Enrique Luli</h3>
-                        <span class="member-role">Hydroponic Expert & Mentor</span>
+                        <span class="member-role" data-i18n="team.mentorRole">Hydroponic Expert & Mentor</span>
                         <span class="member-location">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             Lima, Peru
                         </span>
-                        <p>Renowned hydroponic specialist with a significant social media following, dedicated to spreading hydroponic knowledge and innovation throughout Latin America.</p>
+                        <p data-i18n="team.enriqueDesc">Renowned hydroponic specialist with a significant social media following, dedicated to spreading hydroponic knowledge and innovation throughout Latin America.</p>
                         <div class="member-social">
                             <a href="#" aria-label="Instagram" class="social-link">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
@@ -368,9 +379,9 @@
         <div class="section-container">
             <div class="diamond-content">
                 <div class="diamond-info">
-                    <span class="section-tag light">Entrepreneurship</span>
+                    <span class="section-tag light" data-i18n="diamond.tag">Entrepreneurship</span>
                     <h2 class="section-title light">Diamond Challenge <em>2025</em></h2>
-                    <p class="diamond-description">
+                    <p class="diamond-description" data-i18n="diamond.desc">
                         Our initiative is proud to compete in the prestigious Diamond Challenge, presenting our innovative 
                         hydroponic model designed to revolutionize sustainable agriculture in Peru and beyond.
                     </p>
@@ -382,8 +393,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4>Innovation Award Contender</h4>
-                                <p>Pioneering cost-efficient hydroponic solutions</p>
+                                <h4 data-i18n="diamond.feature1Title">Innovation Award Contender</h4>
+                                <p data-i18n="diamond.feature1Desc">Pioneering cost-efficient hydroponic solutions</p>
                             </div>
                         </div>
                         <div class="challenge-feature">
@@ -393,8 +404,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4>Scalable Impact</h4>
-                                <p>From local farms to national transformation</p>
+                                <h4 data-i18n="diamond.feature2Title">Scalable Impact</h4>
+                                <p data-i18n="diamond.feature2Desc">From local farms to national transformation</p>
                             </div>
                         </div>
                         <div class="challenge-feature">
@@ -404,8 +415,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4>Market Ready</h4>
-                                <p>Practical solutions for real-world agricultural challenges</p>
+                                <h4 data-i18n="diamond.feature3Title">Market Ready</h4>
+                                <p data-i18n="diamond.feature3Desc">Practical solutions for real-world agricultural challenges</p>
                             </div>
                         </div>
                     </div>
@@ -431,15 +442,15 @@
                     <div class="diamond-stats">
                         <div class="d-stat">
                             <span class="d-stat-value">50%</span>
-                            <span class="d-stat-label">Cost Reduction</span>
+                            <span class="d-stat-label" data-i18n="diamond.stat1">Cost Reduction</span>
                         </div>
                         <div class="d-stat">
-                            <span class="d-stat-value">Local</span>
-                            <span class="d-stat-label">Materials</span>
+                            <span class="d-stat-value" data-i18n="diamond.stat2Value">Local</span>
+                            <span class="d-stat-label" data-i18n="diamond.stat2">Materials</span>
                         </div>
                         <div class="d-stat">
-                            <span class="d-stat-value">Easy</span>
-                            <span class="d-stat-label">Assembly</span>
+                            <span class="d-stat-value" data-i18n="diamond.stat3Value">Easy</span>
+                            <span class="d-stat-label" data-i18n="diamond.stat3">Assembly</span>
                         </div>
                     </div>
                 </div>
@@ -452,9 +463,9 @@
         <div class="section-container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <span class="section-tag">Get Involved</span>
-                    <h2 class="section-title">Let's Grow <em>Together</em></h2>
-                    <p>Whether you're a farmer, educator, investor, or simply passionate about sustainable agriculture, we'd love to hear from you. Join us in revolutionizing Peru's agricultural future.</p>
+                    <span class="section-tag" data-i18n="contact.tag">Get Involved</span>
+                    <h2 class="section-title"><span data-i18n="contact.title1">Let's Grow</span> <em data-i18n="contact.title2">Together</em></h2>
+                    <p data-i18n="contact.desc">Whether you're a farmer, educator, investor, or simply passionate about sustainable agriculture, we'd love to hear from you. Join us in revolutionizing Peru's agricultural future.</p>
                     
                     <div class="contact-methods">
                         <div class="contact-method">
@@ -465,7 +476,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4>Email Us</h4>
+                                <h4 data-i18n="contact.emailTitle">Email Us</h4>
                                 <a href="mailto:contact@verdoso.pe">contact@verdoso.pe</a>
                             </div>
                         </div>
@@ -477,14 +488,14 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4>Location</h4>
+                                <h4 data-i18n="contact.locationTitle">Location</h4>
                                 <p>Lima, Peru</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="social-links">
-                        <h4>Follow Our Journey</h4>
+                        <h4 data-i18n="contact.followTitle">Follow Our Journey</h4>
                         <div class="social-icons">
                             <a href="#" class="social-icon" aria-label="Instagram">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
@@ -508,30 +519,30 @@
                 <div class="contact-form-container">
                     <form class="contact-form">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            <label for="name" data-i18n="form.name">Your Name</label>
+                            <input type="text" id="name" name="name" data-i18n-placeholder="form.namePlaceholder" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <label for="email" data-i18n="form.email">Email Address</label>
+                            <input type="email" id="email" name="email" data-i18n-placeholder="form.emailPlaceholder" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <label for="interest">I'm Interested In</label>
+                            <label for="interest" data-i18n="form.interest">I'm Interested In</label>
                             <select id="interest" name="interest">
-                                <option value="">Select an option</option>
-                                <option value="partnership">Partnership Opportunity</option>
-                                <option value="investment">Investment</option>
-                                <option value="education">Educational Collaboration</option>
-                                <option value="farming">Implementing Hydroponics</option>
-                                <option value="other">Other</option>
+                                <option value="" data-i18n="form.selectOption">Select an option</option>
+                                <option value="partnership" data-i18n="form.option1">Partnership Opportunity</option>
+                                <option value="investment" data-i18n="form.option2">Investment</option>
+                                <option value="education" data-i18n="form.option3">Educational Collaboration</option>
+                                <option value="farming" data-i18n="form.option4">Implementing Hydroponics</option>
+                                <option value="other" data-i18n="form.option5">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us how you'd like to get involved..." required></textarea>
+                            <label for="message" data-i18n="form.message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" data-i18n-placeholder="form.messagePlaceholder" placeholder="Tell us how you'd like to get involved..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-full">
-                            Send Message
+                            <span data-i18n="form.submit">Send Message</span>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="22" y1="2" x2="11" y2="13"/>
                                 <polygon points="22 2 15 22 11 13 2 9 22 2"/>
@@ -556,22 +567,22 @@
                         </svg>
                         <span>Verdoso</span>
                     </a>
-                    <p>Cultivating sustainable futures through innovative hydroponic solutions. Based in Lima, Peru.</p>
+                    <p data-i18n="footer.desc">Cultivating sustainable futures through innovative hydroponic solutions. Based in Lima, Peru.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-col">
-                        <h4>Navigate</h4>
+                        <h4 data-i18n="footer.navigate">Navigate</h4>
                         <ul>
-                            <li><a href="#mission">Our Mission</a></li>
-                            <li><a href="#science">The Science</a></li>
-                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#mission" data-i18n="footer.mission">Our Mission</a></li>
+                            <li><a href="#science" data-i18n="footer.science">The Science</a></li>
+                            <li><a href="#team" data-i18n="footer.team">Our Team</a></li>
                             <li><a href="#diamond">Diamond Challenge</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Connect</h4>
+                        <h4 data-i18n="footer.connect">Connect</h4>
                         <ul>
-                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#contact" data-i18n="footer.contactUs">Contact Us</a></li>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">YouTube</a></li>
                             <li><a href="#">LinkedIn</a></li>
@@ -580,15 +591,148 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Verdoso Initiative. Cultivating change for a greener tomorrow.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 Verdoso Initiative. Cultivating change for a greener tomorrow.</p>
                 <div class="footer-badge">
-                    <span>Diamond Challenge Participant</span>
+                    <span data-i18n="footer.badge">Diamond Challenge Participant</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    // Language translations (inline for reliability)
+    const i18n = {
+        en: {
+            "nav.mission": "Mission", "nav.science": "Science", "nav.team": "Team", "nav.contact": "Contact",
+            "hero.badge": "Hydroponic Innovation from Peru",
+            "hero.title1": "Growing the", "hero.title2": "Future", "hero.title3": "Without Soil",
+            "hero.description": "Revolutionizing agriculture through accessible, cost-efficient hydroponic systems. Breaking barriers, educating communities, and cultivating sustainable solutions for Peru and beyond.",
+            "hero.cta1": "Discover How", "hero.cta2": "Join the Movement",
+            "hero.stat1": "Less Water Usage", "hero.stat2": "Faster Growth", "hero.stat3": "Possibilities",
+            "mission.tag": "Our Purpose", "mission.title1": "Cultivating Change,", "mission.title2": "One Drop at a Time",
+            "mission.mainTitle": "Our Mission",
+            "mission.mainDesc": "To democratize hydroponic agriculture across Peru by developing cost-efficient systems that break down economic barriers, while educating communities on sustainable farming practices that can transform our food future.",
+            "mission.card1Title": "Education First", "mission.card1Desc": "Promoting hydroponic knowledge in schools and communities throughout Peru, making agricultural innovation accessible to everyone.",
+            "mission.card2Title": "Breaking Barriers", "mission.card2Desc": "Developing affordable hydroponic models that eliminate cost barriers preventing farmers from adopting sustainable practices.",
+            "mission.card3Title": "Solving Global Issues", "mission.card3Desc": "Demonstrating how hydroponics addresses water scarcity, food security, and land use challenges facing our world today.",
+            "science.tag": "The Science", "science.title1": "How Hydroponics", "science.title2": "Works",
+            "science.subtitle": "A soil-free revolution in agriculture, powered by water, nutrients, and innovation",
+            "science.card1Title": "Nutrient Film Technique", "science.card1Desc": "A thin film of nutrient-rich water continuously flows over plant roots, providing constant access to essential minerals while maximizing oxygen exposure.",
+            "science.card2Title": "Accelerated Growth", "science.card2Desc": "Plants grow up to 3x faster due to direct nutrient access. Roots don't need to search for food, allowing energy to focus on vegetative growth.",
+            "science.card3Title": "Water Conservation", "science.card3Desc": "Recirculating systems use up to 90% less water than traditional farming. Every drop is reused, making it ideal for water-scarce regions.",
+            "science.card4Title": "Pesticide-Free", "science.card4Desc": "Controlled environments eliminate most pests and diseases, reducing or eliminating the need for harmful chemical pesticides.",
+            "team.tag": "The Visionaries", "team.title1": "Meet Our", "team.title2": "Team",
+            "team.cofounder": "Co-Founder", "team.leaderRole": "Initiative Leader", "team.mentor": "Mentor", "team.mentorRole": "Hydroponic Expert & Mentor",
+            "team.carlosDesc": "Passionate about sustainable agriculture and innovative solutions to Peru's food security challenges.",
+            "team.gabrielDesc": "Dedicated to making hydroponic technology accessible and affordable for farmers across Peru.",
+            "team.enriqueDesc": "Renowned hydroponic specialist with a significant social media following, dedicated to spreading hydroponic knowledge and innovation throughout Latin America.",
+            "diamond.tag": "Entrepreneurship",
+            "diamond.desc": "Our initiative is proud to compete in the prestigious Diamond Challenge, presenting our innovative hydroponic model designed to revolutionize sustainable agriculture in Peru and beyond.",
+            "diamond.feature1Title": "Innovation Award Contender", "diamond.feature1Desc": "Pioneering cost-efficient hydroponic solutions",
+            "diamond.feature2Title": "Scalable Impact", "diamond.feature2Desc": "From local farms to national transformation",
+            "diamond.feature3Title": "Market Ready", "diamond.feature3Desc": "Practical solutions for real-world agricultural challenges",
+            "diamond.stat1": "Cost Reduction", "diamond.stat2": "Materials", "diamond.stat2Value": "Local", "diamond.stat3": "Assembly", "diamond.stat3Value": "Easy",
+            "contact.tag": "Get Involved", "contact.title1": "Let's Grow", "contact.title2": "Together",
+            "contact.desc": "Whether you're a farmer, educator, investor, or simply passionate about sustainable agriculture, we'd love to hear from you. Join us in revolutionizing Peru's agricultural future.",
+            "contact.emailTitle": "Email Us", "contact.locationTitle": "Location", "contact.followTitle": "Follow Our Journey",
+            "form.name": "Your Name", "form.namePlaceholder": "Enter your name",
+            "form.email": "Email Address", "form.emailPlaceholder": "Enter your email",
+            "form.interest": "I'm Interested In", "form.selectOption": "Select an option",
+            "form.option1": "Partnership Opportunity", "form.option2": "Investment", "form.option3": "Educational Collaboration", "form.option4": "Implementing Hydroponics", "form.option5": "Other",
+            "form.message": "Your Message", "form.messagePlaceholder": "Tell us how you'd like to get involved...",
+            "form.submit": "Send Message",
+            "footer.desc": "Cultivating sustainable futures through innovative hydroponic solutions. Based in Lima, Peru.",
+            "footer.navigate": "Navigate", "footer.mission": "Our Mission", "footer.science": "The Science", "footer.team": "Our Team",
+            "footer.connect": "Connect", "footer.contactUs": "Contact Us",
+            "footer.copyright": "© 2025 Verdoso Initiative. Cultivating change for a greener tomorrow.",
+            "footer.badge": "Diamond Challenge Participant"
+        },
+        es: {
+            "nav.mission": "Misión", "nav.science": "Ciencia", "nav.team": "Equipo", "nav.contact": "Contacto",
+            "hero.badge": "Innovación Hidropónica desde Perú",
+            "hero.title1": "Cultivando el", "hero.title2": "Futuro", "hero.title3": "Sin Tierra",
+            "hero.description": "Revolucionando la agricultura con sistemas hidropónicos accesibles y económicos. Rompiendo barreras, educando comunidades y cultivando soluciones sostenibles para Perú y más allá.",
+            "hero.cta1": "Descubre Cómo", "hero.cta2": "Únete al Movimiento",
+            "hero.stat1": "Menos Uso de Agua", "hero.stat2": "Crecimiento Más Rápido", "hero.stat3": "Posibilidades",
+            "mission.tag": "Nuestro Propósito", "mission.title1": "Cultivando el Cambio,", "mission.title2": "Gota a Gota",
+            "mission.mainTitle": "Nuestra Misión",
+            "mission.mainDesc": "Democratizar la agricultura hidropónica en todo el Perú desarrollando sistemas económicos que eliminen las barreras económicas, mientras educamos a las comunidades sobre prácticas agrícolas sostenibles que pueden transformar nuestro futuro alimentario.",
+            "mission.card1Title": "Educación Primero", "mission.card1Desc": "Promoviendo el conocimiento hidropónico en escuelas y comunidades de todo el Perú, haciendo la innovación agrícola accesible para todos.",
+            "mission.card2Title": "Rompiendo Barreras", "mission.card2Desc": "Desarrollando modelos hidropónicos asequibles que eliminan las barreras de costos que impiden a los agricultores adoptar prácticas sostenibles.",
+            "mission.card3Title": "Resolviendo Problemas Globales", "mission.card3Desc": "Demostrando cómo la hidroponía aborda la escasez de agua, la seguridad alimentaria y los desafíos de uso del suelo que enfrenta nuestro mundo hoy.",
+            "science.tag": "La Ciencia", "science.title1": "Cómo Funciona", "science.title2": "la Hidroponía",
+            "science.subtitle": "Una revolución agrícola sin tierra, impulsada por agua, nutrientes e innovación",
+            "science.card1Title": "Técnica de Película Nutritiva", "science.card1Desc": "Una fina película de agua rica en nutrientes fluye continuamente sobre las raíces de las plantas, proporcionando acceso constante a minerales esenciales mientras maximiza la exposición al oxígeno.",
+            "science.card2Title": "Crecimiento Acelerado", "science.card2Desc": "Las plantas crecen hasta 3 veces más rápido debido al acceso directo a nutrientes. Las raíces no necesitan buscar alimento, permitiendo que la energía se enfoque en el crecimiento vegetativo.",
+            "science.card3Title": "Conservación del Agua", "science.card3Desc": "Los sistemas de recirculación usan hasta 90% menos agua que la agricultura tradicional. Cada gota se reutiliza, haciéndolo ideal para regiones con escasez de agua.",
+            "science.card4Title": "Libre de Pesticidas", "science.card4Desc": "Los ambientes controlados eliminan la mayoría de plagas y enfermedades, reduciendo o eliminando la necesidad de pesticidas químicos dañinos.",
+            "team.tag": "Los Visionarios", "team.title1": "Conoce a Nuestro", "team.title2": "Equipo",
+            "team.cofounder": "Co-Fundador", "team.leaderRole": "Líder de la Iniciativa", "team.mentor": "Mentor", "team.mentorRole": "Experto en Hidroponía y Mentor",
+            "team.carlosDesc": "Apasionado por la agricultura sostenible y las soluciones innovadoras para los desafíos de seguridad alimentaria del Perú.",
+            "team.gabrielDesc": "Dedicado a hacer la tecnología hidropónica accesible y asequible para los agricultores de todo el Perú.",
+            "team.enriqueDesc": "Reconocido especialista en hidroponía con un gran seguimiento en redes sociales, dedicado a difundir el conocimiento y la innovación hidropónica en toda América Latina.",
+            "diamond.tag": "Emprendimiento",
+            "diamond.desc": "Nuestra iniciativa se enorgullece de competir en el prestigioso Diamond Challenge, presentando nuestro modelo hidropónico innovador diseñado para revolucionar la agricultura sostenible en Perú y más allá.",
+            "diamond.feature1Title": "Candidato al Premio de Innovación", "diamond.feature1Desc": "Pioneros en soluciones hidropónicas económicas",
+            "diamond.feature2Title": "Impacto Escalable", "diamond.feature2Desc": "De granjas locales a transformación nacional",
+            "diamond.feature3Title": "Listo para el Mercado", "diamond.feature3Desc": "Soluciones prácticas para desafíos agrícolas del mundo real",
+            "diamond.stat1": "Reducción de Costos", "diamond.stat2": "Materiales", "diamond.stat2Value": "Locales", "diamond.stat3": "Ensamblaje", "diamond.stat3Value": "Fácil",
+            "contact.tag": "Involúcrate", "contact.title1": "Crezcamos", "contact.title2": "Juntos",
+            "contact.desc": "Ya seas agricultor, educador, inversionista o simplemente apasionado por la agricultura sostenible, nos encantaría saber de ti. Únete a nosotros para revolucionar el futuro agrícola del Perú.",
+            "contact.emailTitle": "Escríbenos", "contact.locationTitle": "Ubicación", "contact.followTitle": "Sigue Nuestro Camino",
+            "form.name": "Tu Nombre", "form.namePlaceholder": "Ingresa tu nombre",
+            "form.email": "Correo Electrónico", "form.emailPlaceholder": "Ingresa tu correo",
+            "form.interest": "Me Interesa", "form.selectOption": "Selecciona una opción",
+            "form.option1": "Oportunidad de Alianza", "form.option2": "Inversión", "form.option3": "Colaboración Educativa", "form.option4": "Implementar Hidroponía", "form.option5": "Otro",
+            "form.message": "Tu Mensaje", "form.messagePlaceholder": "Cuéntanos cómo te gustaría participar...",
+            "form.submit": "Enviar Mensaje",
+            "footer.desc": "Cultivando futuros sostenibles a través de soluciones hidropónicas innovadoras. Con sede en Lima, Perú.",
+            "footer.navigate": "Navegar", "footer.mission": "Nuestra Misión", "footer.science": "La Ciencia", "footer.team": "Nuestro Equipo",
+            "footer.connect": "Conectar", "footer.contactUs": "Contáctanos",
+            "footer.copyright": "© 2025 Iniciativa Verdoso. Cultivando el cambio para un mañana más verde.",
+            "footer.badge": "Participante del Diamond Challenge"
+        }
+    };
+
+    function switchLang(lang) {
+        localStorage.setItem('verdoso-lang', lang);
+        document.documentElement.lang = lang;
+        
+        // Update button states
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+        
+        // Translate elements
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.dataset.i18n;
+            if (i18n[lang] && i18n[lang][key]) {
+                el.textContent = i18n[lang][key];
+            }
+        });
+        
+        // Translate placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.dataset.i18nPlaceholder;
+            if (i18n[lang] && i18n[lang][key]) {
+                el.placeholder = i18n[lang][key];
+            }
+        });
+        
+        // Update page title
+        document.title = lang === 'es' ? 'Verdoso | Iniciativa Hidropónica Perú' : 'Verdoso | Hydroponic Initiative Peru';
+    }
+
+    // Initialize language switcher
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('verdoso-lang') || 'en';
+        switchLang(savedLang);
+        
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', () => switchLang(btn.dataset.lang));
+        });
+    });
+    </script>
 </body>
 </html>
-
