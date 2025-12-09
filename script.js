@@ -1,5 +1,5 @@
 /* ==========================================
-   VERDOSO - Hydroponic Initiative Peru
+   CULTIVA PERÚ - Hydroponic Initiative Peru
    JavaScript Interactions & i18n
    ========================================== */
 
@@ -114,7 +114,7 @@ const translations = {
         "footer.team": "Our Team",
         "footer.connect": "Connect",
         "footer.contactUs": "Contact Us",
-        "footer.copyright": "© 2025 Verdoso Initiative. Cultivating change for a greener tomorrow.",
+        "footer.copyright": "© 2025 Cultiva Perú. Cultivating change for a greener tomorrow.",
         "footer.badge": "Diamond Challenge Participant"
     },
     es: {
@@ -226,13 +226,13 @@ const translations = {
         "footer.team": "Nuestro Equipo",
         "footer.connect": "Conectar",
         "footer.contactUs": "Contáctanos",
-        "footer.copyright": "© 2025 Iniciativa Verdoso. Cultivando el cambio para un mañana más verde.",
+        "footer.copyright": "© 2025 Cultiva Perú. Cultivando el cambio para un mañana más verde.",
         "footer.badge": "Participante del Diamond Challenge"
     }
 };
 
 // Current language
-let currentLang = localStorage.getItem('verdoso-lang') || 'en';
+let currentLang = localStorage.getItem('cultivaperu-lang') || 'en';
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -267,7 +267,7 @@ function initLanguageSwitcher() {
 
 function setLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('verdoso-lang', lang);
+    localStorage.setItem('cultivaperu-lang', lang);
     
     // Update active button
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -303,8 +303,8 @@ function setLanguage(lang) {
     
     // Update page title
     document.title = lang === 'es' 
-        ? 'Verdoso | Iniciativa Hidropónica Perú' 
-        : 'Verdoso | Hydroponic Initiative Peru';
+        ? 'Cultiva Perú | Iniciativa Hidropónica' 
+        : 'Cultiva Perú | Hydroponic Initiative Peru';
 }
 
 /* ==========================================

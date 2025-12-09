@@ -1,5 +1,5 @@
 /* ==========================================
-   VERDOSO - Hydroponic Initiative Peru
+   CULTIVA PERÚ - Hydroponic Initiative Peru
    Modern CSS with Green & White Aesthetic
    ========================================== */
 
@@ -151,7 +151,7 @@ em {
 .logo-icon {
     width: 40px;
     height: 40px;
-    color: var(--green-400);
+    object-fit: contain;
 }
 
 .nav-links {
